@@ -1,10 +1,13 @@
 import reactLogo from '../assets/react.svg'
-import viteLogo from '/vite.svg'
+
 
 export function Welcome() {
     return (
         <>
-            Soy welcome
+            <h1>Bienvenid@</h1>
+            <p>Este sitio esta diseñado para cumplir el rol de css pack, mezclando lo mejor de 3 grandes frameworks, w3css, bootstrap y picoCss<br/>
+            tratando de dar un estilo general semántico
+            </p>
         </>
     )
 }

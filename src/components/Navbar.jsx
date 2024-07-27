@@ -1,10 +1,22 @@
+import { NavLink } from "react-router-dom";
+
 export function Navbar() {
+
+    const pages = [
+        {
+            title:  'Home',
+            path:   '/'
+        },        {
+            title:  'Tags',
+            path:   'tags'
+        }
+    ];
+
     return (
-        <div className="bar black">
-            <a href="#" className="bar-item button">Home</a>
-            <a href="#" className="bar-item button">Link 1</a>
-            <a href="#" className="bar-item button">Link 2</a>
-            <a href="#" className="bar-item button">Link 3</a>
-      </div> 
+        <nav className="bar black">
+            {pages.map( page => (
+                <NavLink className="bar-item button" to={page.path} >{page.title}</NavLink>
+            ))}
+      </nav> 
     )
 };

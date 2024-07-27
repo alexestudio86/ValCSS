@@ -6,7 +6,6 @@ export function GeneralLayout() {
         <div className="container">
             <Navbar/>
             <Outlet/>
-            general layout down
         </div>
     )
 }

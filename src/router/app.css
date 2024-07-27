@@ -46,6 +46,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+:root{
+  --color-black: #212529;
+}
 @font-face {
   font-family: 'Poppins', sans-serif;
   src: url('./poppins/Poppins-Regular.ttf');
@@ -123,7 +126,7 @@ body, html {
 /*COLORS*/
 .black, .hover-black:hover{
   color:#fff!important;
-  background-color:RGBA(var(--bs-dark-rgb)var(--bs-bg-opacity,1))!important
+  background-color:var(--color-black)!important
 }
 
 /*BUTTONS*/
