@@ -1,6 +1,3 @@
-import reactLogo from '../assets/react.svg'
-
-
 export function Welcome() {
     return (
         <>

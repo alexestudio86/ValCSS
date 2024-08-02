@@ -1,11 +1,24 @@
-import { Link } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
+
+
+
 
 export function Tags() {
+
+    const {tags} = useLoaderData();
+
     return(
-        <div id="tags">
+        <main id="tags">
             <h1>Tags HTML</h1>
-            <Link to='anchor'>Anchor</Link>
-            <a></a>
+                {console.log('tags: ', tags.length)}
+            <article style={{background: 'white', border: '1px solid #ccc'}}>
+                <header style={{textTransform:'uppercase', padding:'16px', backgroundColor:'#f1f1f1', color:'#000'}}>Abbreviation</header>
+                <section style={{padding:'16px'}}>
+                    <p>An abbreviation is marked up as follows:</p>
+                    <code>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948. </code>
+                </section>
+                <footer style={{backgroundColor:'#9e9e9e', color:'#000', padding:'16px', textAlign:'center'}}><Link to='abbreviation' style={{textDecoration:'none'}}>Go</Link></footer>
+            </article>
             <abbr></abbr>
             <address></address>
             <area></area>
@@ -16,15 +29,15 @@ export function Tags() {
             <base></base>
             <bdo></bdo>
             <blockquote></blockquote>
-            <body></body>
             <br></br>
             <button></button>
             <canvas></canvas>
-            <caption></caption>
+            Caption:
+            {`<caption></caption>`}
             <cite></cite>
             <code></code>
-            <col></col>
-            <colgroup></colgroup>
+            {`<col></col>`}
+            {`<colgroup></colgroup>`}
             <datalist></datalist>
             <dd></dd>
             <del></del>
@@ -39,7 +52,6 @@ export function Tags() {
             <figure></figure>
             <footer></footer>
             <form></form>
-            <head></head>
             <header></header>
             <hr></hr>
             <i></i>
@@ -84,19 +96,19 @@ export function Tags() {
             <sub></sub>
             <sup></sup>
             <table></table>
-            <tbody></tbody>
-            <td></td>
+            {`<tbody></tbody>`}
+            {`<td></td>`}
             <textarea></textarea>
-            <tfoot></tfoot>
-            <th></th>
-            <thead></thead>
+            {`<tfoot></tfoot>`}
+            {`<th></th>`}
+            {`<thead></thead>`}
             <time></time>
             <title></title>
-            <tr></tr>
+            {`<tr></tr>`}
             <u></u>
             <ul></ul>
             <var></var>
             <video></video>
-        </div>
+        </main>
     )
 }
