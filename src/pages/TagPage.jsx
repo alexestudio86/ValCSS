@@ -1,12 +1,14 @@
-import { useParams } from "react-router-dom"
+import { useLoaderData, useSearchParams } from "react-router-dom"
 
 export function TagPage() {
     
-    const {tag} = useParams();
+    const [params, setParams] = useSearchParams();
+    const {tag} = useLoaderData();
+    console.log('tag:', tag)
 
     return (
         <main style={{backgroundColor: 'white'}}>
-            Param {tag}
+            Param {tagSlug}
         </main>
     )
 }

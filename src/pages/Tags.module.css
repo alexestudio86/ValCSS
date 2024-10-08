@@ -1,0 +1,9 @@
+.tags-container {
+    display:    grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-column-gap:    16px;
+    grid-row-gap:       16px;
+}
+.tagsContainer article {
+    border-radius: 8px;
+}

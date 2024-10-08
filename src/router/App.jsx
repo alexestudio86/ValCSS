@@ -3,7 +3,7 @@ import { GeneralLayout } from '../Layouts/GeneralLayout';
   import { Welcome } from '../pages/Welcome';
   import { Tags } from '../pages/Tags';
 import { TagPage } from '../pages/TagPage';
-import { getTags } from '../context/jsonCalls';
+import { getTag, getTags } from '../context/jsonCalls';
 import { Templates } from '../pages/Templates';
 import { Tem01 } from '../components/template01/Tem01';
 import { Tem01Layout } from '../Layouts/template01/Tem01.Layout';
@@ -13,17 +13,18 @@ const App = () => {
 
   const router = createBrowserRouter([
     {
+      element:      <GeneralLayout/>,
       errorElement: (<GeneralLayout><h1>Error element</h1></GeneralLayout>),
       children:     [
         {
           index:    true,
-          element:  (<GeneralLayout><Welcome/></GeneralLayout>),
+          element:  <Welcome/>,
           path:     '/'
         },{
-          element:  (<GeneralLayout><Templates/></GeneralLayout>),
+          element:  <Templates/>,
           path:     '/templates'
         },{
-          element:  (<Tem01Layout><Tem01/></Tem01Layout>),
+          element:  <Tem01/>,
           path:     '/templates/01'
         },{
           element:  <Tags/>,
@@ -31,7 +32,8 @@ const App = () => {
           path:     '/tags',
         },{
           element:  <TagPage/>,
-          path:     '/tags/:tag'
+          loader:   getTag,
+          path:     '/tags/:tagSlug'
         }
       ]
     }

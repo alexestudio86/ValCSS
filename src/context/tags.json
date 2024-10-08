@@ -1,14 +1,45 @@
 [
-    {
-      "tagId":          "anchor",
-      "id":             1,
-      "title":          "Anchor",
-      "description":    "<a></a>"
-    },
-    {
-        "tagId":          "abbreviation2",
-        "id":             2,
-        "title":          "Abbreviation2",
-        "description":    "Abbreviation2"
-      }
+  {
+    "id":             "anchor",
+    "title":          "Anchor / Ancla",
+    "tag":            "<a></a>",
+    "slug":           "anchor",
+    "example":        "anchor",
+    "description":    "crea un enlace a otras páginas de internet, archivos o ubicaciones dentro de la misma página, direcciones de correo, o cualquier otra URL."
+  },{
+    "id":             2,
+    "title":          "Abbreviation / Abreviación",
+    "tag":            "<abbr></abbr>",
+    "slug":           "abbreviation",
+    "example":        "abbreviation",
+    "description":    "Representa una abreviación o acrónimo; el atributo opcional title puede ampliar o describir la abreviatura. Si está presente, el atributo title debe contener la descripción completa y nada más."
+  },{
+    "id":             3,
+    "title":          "Address / Dirección",
+    "tag":            "<address></address>",
+    "slug":           "address",
+    "example":        "address",
+    "description":    "<address></address>"
+  },{
+    "id":             4,
+    "title":          "Area / Área",
+    "tag":            "<area></area>",
+    "slug":           "area",
+    "example":        "area",
+    "description":    "<area></area>"
+  },{
+    "id":             5,
+    "title":          "Article / Artículo",
+    "tag":            "<article></article>",
+    "slug":           "article",
+    "example":        "article",
+    "description":    "<article></article>"
+  },{
+    "id":             6,
+    "title":          "Aside",
+    "tag":            "<aside></aside>",
+    "slug":           "aside",
+    "example":        "aside",
+    "description":    "<aside></aside>"
+  }
 ]
