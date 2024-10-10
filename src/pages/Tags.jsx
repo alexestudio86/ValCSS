@@ -15,7 +15,7 @@ export function Tags() {
                         <div className={[styles['tags-container']].join(' ')}>
                             {tags.map((tag, index) => (
                                 <article key={index} style={{background: 'white', border: '1px solid #ccc'}}>
-                                    <Link to={`?tagID=${tag.slug}`} style={{textDecoration: 'none'}}>
+                                    <Link to={`search?q=${tag.id}`} style={{textDecoration: 'none'}}>
                                         <header style={{textTransform:'uppercase', padding:'16px', backgroundColor:'#f1f1f1', color:'#000'}}>{tag.title}</header>
                                         <section style={{padding:'16px'}}>
                                             <p>{tag.example}</p>

@@ -33,7 +33,7 @@ const App = () => {
         },{
           element:  <TagPage/>,
           loader:   getTag,
-          path:     '/tags/:tagSlug'
+          path:     '/tags/search'
         }
       ]
     }

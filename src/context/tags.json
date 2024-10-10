@@ -3,42 +3,36 @@
     "id":             "anchor",
     "title":          "Anchor / Ancla",
     "tag":            "<a></a>",
-    "slug":           "anchor",
-    "example":        "anchor",
+    "example":        "<img alt=\"Nanoplastia Citrux\" class=\"d-none d-lg-block d-xl-none d-xxl-none\" \n     src=\"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjaglQIn9NUGmYhl0W-8i-n1sIaxVDGYAS-w6_XCFHQeBZbfDWbzJvExfVGMo_-lmWw_EEpMGsQypXFD-eUBqZY6HxSmySJZSRKvA6JjvQHcfhLXI0erVqskhqbrxoLJG1-7HFLotfqrqCC09n6HJ54EK0nQB9BYcjav-Nt9AufmXTe0IaxI6-Av6_OhQ/s1600/7700.png\"/>\n<br />\n<br />\n<p> Revitaliza melenas</p>\n<p> Desintoxica de quimicos pesados </p>\n<p> Hebras mas fuertes y saludables </p> \n<p> Estimula el crecimiento </p>\n\n<form class=\"form-check form-switch\">\n  <div class=\"row\">\n    <div class=\"col-6\">\n      <input class=\"form-check-input\" id=\"500ml\" name=\"cantidad\" type=\"radio\" value=\"260\" />\n      <label class=\"form-check-label\">500ml | $260</label>\n    </div>\n    <div class=\"col-6\">\n      <input class=\"form-check-input\" id=\"1l\" name=\"cantidad\" type=\"radio\" value=\"440\" />\n      <label class=\"form-check-label\">1l | $440</label>\n    </div>\n  </div>\n</form><br />",
     "description":    "crea un enlace a otras páginas de internet, archivos o ubicaciones dentro de la misma página, direcciones de correo, o cualquier otra URL."
   },{
-    "id":             2,
+    "id":             "abbr",
     "title":          "Abbreviation / Abreviación",
     "tag":            "<abbr></abbr>",
-    "slug":           "abbreviation",
-    "example":        "abbreviation",
+    "example":        "<img alt='Nanoplastia Citrux' class='d-none d-lg-block d-xl-none d-xxl-none' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjaglQIn9NUGmYhl0W-8i-n1sIaxVDGYAS-w6_XCFHQeBZbfDWbzJvExfVGMo_-lmWw_EEpMGsQypXFD-eUBqZY6HxSmySJZSRKvA6JjvQHcfhLXI0erVqskhqbrxoLJG1-7HFLotfqrqCC09n6HJ54EK0nQB9BYcjav-Nt9AufmXTe0IaxI6-Av6_OhQ/s1600/7700.png'/><br /><p> Revitaliza melenas</p><br /><p> Desintoxica de quimicos pesados </p><br /><p> Hebras mas fuertes y saludables </p><br /><p> Estimula el crecimiento </p><br /><form class='form-check form-switch'><br /><div class='row'><div class='col-6'><br /><input class='form-check-input' id='500ml' name='cantidad' type='radio' value='260' /><br /><label class='form-check-label'>500ml | $260</label><br /></div><br /><div class='col-6'><br /><input class='form-check-input' id='1l' name='cantidad' type='radio' value='440' /><br /><label class='form-check-label'>1l | $440</label><br /></div><br /></div><br /></form>",
     "description":    "Representa una abreviación o acrónimo; el atributo opcional title puede ampliar o describir la abreviatura. Si está presente, el atributo title debe contener la descripción completa y nada más."
   },{
-    "id":             3,
+    "id":             "address",
     "title":          "Address / Dirección",
     "tag":            "<address></address>",
-    "slug":           "address",
     "example":        "address",
     "description":    "<address></address>"
   },{
-    "id":             4,
+    "id":             "area",
     "title":          "Area / Área",
     "tag":            "<area></area>",
-    "slug":           "area",
     "example":        "area",
     "description":    "<area></area>"
   },{
-    "id":             5,
+    "id":             "article",
     "title":          "Article / Artículo",
     "tag":            "<article></article>",
-    "slug":           "article",
     "example":        "article",
     "description":    "<article></article>"
   },{
-    "id":             6,
+    "id":             "aside",
     "title":          "Aside",
     "tag":            "<aside></aside>",
-    "slug":           "aside",
     "example":        "aside",
     "description":    "<aside></aside>"
   }

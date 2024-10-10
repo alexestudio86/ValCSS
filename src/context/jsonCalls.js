@@ -11,10 +11,11 @@ export const getTags = async () => {
 
 export const getTag = async ( {request} ) => {
     const url = new URL(request.url);
-    const searchLabel = url.searchParams.get('labels');
+    const searchTerm = url.searchParams.get('q');
+    const findOjt = tags.filter( tag => tag.id === searchTerm)
     try {
         //console.log('el param:', params)
-        return{tag: tags["anchor"]}
+        return{tag: findOjt}
     } catch (error) {
         return error
     }
