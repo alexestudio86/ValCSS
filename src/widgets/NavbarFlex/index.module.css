@@ -1,0 +1,16 @@
+.layout_container ul {
+    display:    flex;
+    flex-wrap:  wrap;
+    gap:        1rem;
+}
+
+.layout_container li {
+    flex-basis: 8rem;
+    flex-grow:  1;
+}
+
+.layout_container img {
+    flex-basis: 0;
+    flex-grow:  999;
+    max-width:  60%;
+}

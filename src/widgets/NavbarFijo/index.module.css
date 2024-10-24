@@ -1,0 +1,29 @@
+.layout_container {
+    position: absolute;
+}
+
+.layout_container nav {
+    float: left; /* Desplazamos el nav hacia la izquierda */
+}
+
+.layout_container nav ul {
+    list-style: none;
+    overflow: hidden; /* Limpiamos errores de float */
+}
+
+.layout_container nav ul li {
+    float: left;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+.layout_container nav ul li a {
+    display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.layout_container nav ul li:hover {
+    background: #3ead47;
+}
