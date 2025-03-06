@@ -2,9 +2,9 @@
 
 /* VARIABLES */
 :root{
-    --theme-color-one:      #114253;
-    --theme-color-two:      #19647E;
-    --theme-color-three:    #66C2E1;
+    --theme-color-one:      #742c52;
+    --theme-color-two:      #aa768e;
+    --theme-color-three:    #f4d2e0;
     --color-amber:          #ffc107;
     --color-aqua:           #00ffff;
     --color-black:          #000;
@@ -1157,21 +1157,6 @@ a {
     }
 }
 
-.top,
-.bottom {
-    position: fixed;
-    width: 100%;
-    z-index: 1
-}
-
-.top {
-    top: 0
-}
-
-.bottom {
-    bottom: 0
-}
-
 .overlay {
     position: fixed;
     display: none;
@@ -2099,14 +2084,6 @@ a {
     padding-bottom: 128px !important;
 }
 
-.left {
-    float: left !important
-}
-
-.right {
-    float: right !important
-}
-
 .button:hover {
     color: #000 !important;
     background-color: #ccc !important
@@ -2125,10 +2102,106 @@ a {
     width:  100vw !important
 }
 
+.w-100 {
+    width: 100% !important;
+}
+
 .vh-100 {
     height: 100vh !important
 }
 
+.h-100 {
+    height: 100% !important;
+}
+
 .text-center{
     text-align: center;
+}
+
+/* POSITION */
+
+.position-static{
+    position: static !important
+}
+
+.position-relative{
+    position: relative !important
+}
+
+.position-absolute{
+    position: absolute !important
+}
+
+.position-fixed{
+    position: fixed !important
+}
+
+.position-sticky{
+    position: sticky !important
+}
+
+.top {
+    top: 0
+}
+
+.bottom {
+    bottom: 0
+}
+
+.left, .start {
+    left: 0 !important
+}
+
+.right, .end {
+    right: 0 !important
+}
+
+/* FLEX */
+
+.d-flex {
+    display:            flex !important;
+}
+
+.justify-content-start {
+    justify-content:    flex-start !important;
+}
+
+.justify-content-end {
+    justify-content:    flex-end !important;
+}
+
+.justify-content-center {
+    justify-content:    center !important;
+}
+
+.justify-content-between {
+    justify-content:    space-between !important;
+}
+
+.justify-content-around {
+    justify-content:    space-around !important;
+}
+
+.justify-content-evenly {
+    justify-content:    space-evenly !important;
+}
+
+.align-items-start {
+    align-items:        flex-start !important;
+}
+
+.align-items-end {
+    align-items:        flex-end !important;
+}
+
+.align-items-center {
+    align-items:        center !important;
+}
+
+.align-items-baseline {
+    align-items:        baseline !important;
+}
+
+.align-items-stretch {
+    align-items:        stretch !important;
 }
