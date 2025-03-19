@@ -63,7 +63,7 @@ color:var(--color-white)!important
 
 .theme-color-03,.hover-theme-color-03:hover {
 background-color:var(--theme-color-three)!important;
-color:var(--color-white)!important
+color:var(--color-one)!important
 }
 
 .active {
