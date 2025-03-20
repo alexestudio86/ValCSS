@@ -1457,36 +1457,32 @@ filter:sepia(100%)
 filter:sepia(50%)
 }
 
-.tiny {
-font-size:10px!important
+.small, .h6, h6 {
+font-size:1rem!important
 }
 
-.small {
-font-size:12px!important
+.medium, .h5, h5 {
+font-size:1.25rem!important
 }
 
-.medium {
-font-size:15px!important
+.large, .h4, h4 {
+font-size:1.5rem!important
 }
 
-.large {
-font-size:18px!important
+.xlarge, .h3, h3 {
+font-size:1.75rem!important
 }
 
-.xlarge {
-font-size:24px!important
+.xxlarge, .h2, h2 {
+font-size:2rem!important
 }
 
-.xxlarge {
-font-size:36px!important
-}
-
-.xxxlarge {
-font-size:48px!important
+.xxxlarge, .h1, h1 {
+font-size:2.5rem!important
 }
 
 .jumbo {
-font-size:64px!important
+font-size:3rem!important
 }
 
 .left-align {
