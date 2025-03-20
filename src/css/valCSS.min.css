@@ -706,8 +706,12 @@ text-align:left;
 padding:8px 16px
 }
 
-.main,#main {
+.main {
 transition:margin-left .4s
+}
+
+.aside {
+transition:margin-right .4s
 }
 
 .modal {
