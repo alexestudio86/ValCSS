@@ -42,7 +42,7 @@ font-family:'Poppins',sans-serif;
 src:url(./poppins/Poppins-Regular.ttf)
 }
 
-body > div#root {
+body {
 height:100%;
 width:100%;
 scroll-behavior:smooth;
@@ -445,30 +445,6 @@ border-color:var(--color-pale-yellow)!important
 border-color:var(--color-pale-blue)!important
 }
 
-h1 {
-font-size:36px
-}
-
-h2 {
-font-size:30px
-}
-
-h3 {
-font-size:24px
-}
-
-h4 {
-font-size:20px
-}
-
-h5 {
-font-size:18px
-}
-
-h6 {
-font-size:16px
-}
-
 .cursive {
 font-family:cursive
 }
@@ -691,6 +667,15 @@ position:fixed!important;
 z-index:1;
 overflow:auto
 }
+
+.aside {
+    height:100%;
+    width:200px;
+    background-color:#fff;
+    position:fixed!important;
+    z-index:1;
+    overflow:auto
+    }
 
 .bar-block .dropdown-hover,.bar-block .dropdown-click {
 width:100%
@@ -1457,27 +1442,29 @@ filter:sepia(100%)
 filter:sepia(50%)
 }
 
-.small, .h6, h6 {
+/*FONT SIZE*/
+
+.small, .h6, .fs-6, h6 {
 font-size:1rem!important
 }
 
-.medium, .h5, h5 {
+.medium, .h5, .fs-5, h5 {
 font-size:1.25rem!important
 }
 
-.large, .h4, h4 {
+.large, .h4, .fs-4, h4 {
 font-size:1.5rem!important
 }
 
-.xlarge, .h3, h3 {
+.xlarge, .h3, .fs-3, h3 {
 font-size:1.75rem!important
 }
 
-.xxlarge, .h2, h2 {
+.xxlarge, .h2, .fs-2, h2 {
 font-size:2rem!important
 }
 
-.xxxlarge, .h1, h1 {
+.xxxlarge, .h1, .fs-1, h1 {
 font-size:2.5rem!important
 }
 
@@ -1487,6 +1474,46 @@ font-size:3rem!important
 
 .left-align, .text-start {
 text-align:left!important
+}
+
+.fw-bold{
+    font-weight:700!important
+}
+.fw-bolder{
+    font-weight:bolder!important
+}
+.fw-semibold{
+    font-weight:600!important
+}
+.fw-medium{
+    font-weight:500!important
+}
+.fw-normal{
+    font-weight:400!important
+}
+.fw-light{
+    font-weight:lighter!important
+}
+.fw-lighter{
+    font-weight:lighter!important
+}
+.fst-italic{
+    font-style:italic!important
+}
+.fst-normal{
+    font-style:normal!important
+}
+
+.text-lowercase {
+    text-transform:lowercase
+}
+    
+.text-uppercase {
+    text-transform:uppercase
+}
+    
+.text-capitalize {
+    text-transform:capitalize
 }
 
 .text-center {
@@ -2047,16 +2074,121 @@ box-shadow:none!important
 width:100vw!important
 }
 
+/*SIZE*/
+.ws-1{
+width:8.33333%
+}
+
+.ws-2{
+width:16.66666%
+}
+
+.ws-3{
+width:24.99999%
+}
+
+.ws-4{
+width:33.33333%
+}
+
+.ws-5{
+width:41.66666%
+}
+
+.ws-6{
+width:49.99999%
+}
+
+.ws-7{
+width:58.33333%
+}
+
+.ws-8{
+width:66.66666%
+}
+
+.ws-9{
+width:74.99999%
+}
+
+.ws-10{
+width:83.33333%
+}
+
+.ws-11{
+width:91.66666%
+}
+
+.ws-12{
+width:99.99999%
+}
+
 .w-100 {
 width:100%!important
+}
+
+.w-auto {
+width:auto!important
 }
 
 .vh-100 {
 height:100vh!important
 }
 
+.hs-1{
+height:8.33333%
+}
+
+.hs-2{
+height:16.66666%
+}
+
+.hs-3{
+height:24.99999%
+}
+    
+.hs-4{
+height:33.33333%
+}
+
+.hs-5{
+height:41.66666%
+}
+
+.hs-6{
+height:49.99999%
+}
+
+.hs-7{
+height:58.33333%
+}
+
+.hs-8{
+height:66.66666%
+}
+
+.hs-9{
+height:74.99999%
+}
+
+.hs-10{
+height:83.33333%
+}
+
+.hs-11{
+height:91.66666%
+}
+
+.hs-12{
+height:99.99999%
+}
+
 .h-100 {
 height:100%!important
+}
+
+.h-auto {
+height:auto!important
 }
 
 .position-static {
@@ -2176,14 +2308,6 @@ padding:4px 8px
 
 .container {
 max-width:1140px;
-}
-
-.text-uppercase {
-text-transform:uppercase
-}
-
-.fw-bold {
-font-weight:700
 }
 
 .m-0 {
@@ -2548,18 +2672,6 @@ padding-bottom:32px!important
 .py-5 {
 padding-top:64px!important;
 padding-bottom:64px!important
-}
-
-.w-100 {
-width:100%
-}
-
-.h-100 {
-height:100%
-}
-
-.h-auto {
-height:auto
 }
 
 .rounded-bottom {
