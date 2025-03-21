@@ -1285,17 +1285,17 @@ animation:fading 10s infinite
 }
 
 @keyframes fading {
-0% {
-opacity:0
-}
+    0% {
+    opacity:0
+    }
 
-50% {
-opacity:1
-}
+    50% {
+    opacity:1
+    }
 
-100% {
-opacity:0
-}
+    100% {
+    opacity:0
+    }
 }
 
 .animate-opacity {
@@ -1303,47 +1303,47 @@ animation:opac .8s
 }
 
 @keyframes opac {
-from {
-opacity:0
-}
+    from {
+    opacity:0
+    }
 
-to {
-opacity:1
-}
+    to {
+    opacity:1
+    }
 }
 
 .animate-top {
-position:relative;
-animation:animatetop .4s
+    position:relative;
+    animation:animatetop .4s
 }
 
 @keyframes animatetop {
-from {
-top:-300px;
-opacity:0
-}
+    from {
+    top:-300px;
+    opacity:0
+    }
 
-to {
-top:0;
-opacity:1
+    to {
+    top:0;
+    opacity:1
 }
 }
 
 .animate-left {
-position:relative;
-animation:animateleft .4s
-}
+    position:relative;
+    animation:animateleft .4s
+    }
 
-@keyframes animateleft {
-from {
-left:-300px;
-opacity:0
-}
+    @keyframes animateleft {
+    from {
+    left:-300px;
+    opacity:0
+    }
 
-to {
-left:0;
-opacity:1
-}
+    to {
+    left:0;
+    opacity:1
+    }
 }
 
 .animate-right {
@@ -1352,16 +1352,34 @@ animation:animateright .4s
 }
 
 @keyframes animateright {
-from {
-right:-300px;
-opacity:0
+    from {
+    right:-300px;
+    opacity:0
+    }
+
+    to {
+    right:0;
+    opacity:1
+    }
 }
 
-to {
-right:0;
-opacity:1
-}
-}
+.animate-right-out {
+    position:relative;
+    animation:animateright .4s
+    }
+    
+    @keyframes animateright {
+        from {
+        right:px;
+        opacity:0
+        }
+    
+        to {
+        right:-400;
+        opacity:1
+        }
+    }
+
 
 .animate-bottom {
 position:relative;
@@ -1369,15 +1387,15 @@ animation:animatebottom .4s
 }
 
 @keyframes animatebottom {
-from {
-bottom:-300px;
-opacity:0
-}
+    from {
+    bottom:-300px;
+    opacity:0
+    }
 
-to {
-bottom:0;
-opacity:1
-}
+    to {
+    bottom:0;
+    opacity:1
+    }
 }
 
 .animate-zoom {
@@ -1385,13 +1403,13 @@ animation:animatezoom .6s
 }
 
 @keyframes animatezoom {
-from {
-transform:scale(0)
-}
+    from {
+    transform:scale(0)
+    }
 
-to {
-transform:scale(1)
-}
+    to {
+    transform:scale(1)
+    }
 }
 
 .animate-input {
