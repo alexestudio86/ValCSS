@@ -1347,18 +1347,17 @@ animation:opac .8s
 }
 
 .animate-left-out {
-    position:relative;
     animation:animatelefttout .4s forwards
 }
 
 @keyframes animateleftout {
     from {
-    left: 0;
+    transform: translateX(0);
     opacity:1
     }
 
     to {
-    left: -300px;
+    transform: translateX(-100%);
     opacity:0
     }
 }
@@ -1381,7 +1380,6 @@ animation:animateright .4s
 }
 
 .animate-right-out {
-position:relative;
 animation:animaterightout .4s forwards
 }
     
