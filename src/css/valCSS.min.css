@@ -1365,18 +1365,18 @@ animation:animateright .4s
 
 .animate-right-out {
     position:relative;
-    animation:animateright .4s
+    animation:animaterightout .4s
     }
     
-    @keyframes animateright {
+    @keyframes animaterightout {
         from {
         right:px;
-        opacity:0
+        opacity:1
         }
     
         to {
         right:-400;
-        opacity:1
+        opacity:0
         }
     }
 
