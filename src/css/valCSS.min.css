@@ -1346,6 +1346,23 @@ animation:opac .8s
     }
 }
 
+.animate-left-out {
+    position:relative;
+    animation:animatelefttout .4s forwards
+}
+
+@keyframes animateleftout {
+    from {
+    left: 0;
+    opacity:1
+    }
+
+    to {
+    left: -300px;
+    opacity:0
+    }
+}
+
 .animate-right {
 position:relative;
 animation:animateright .4s
@@ -1364,21 +1381,21 @@ animation:animateright .4s
 }
 
 .animate-right-out {
-    position:relative;
-    animation:animaterightout .4s
+position:relative;
+animation:animaterightout .4s forwards
+}
+    
+ @keyframes animaterightout {
+    from {
+    transform: translateX(0);
+    opacity:1
     }
     
-    @keyframes animaterightout {
-        from {
-        right:0px;
-        opacity:1
-        }
-    
-        to {
-        right:-300px;
-        opacity:0
-        }
+    to {
+    transform: translateX(100%);
+    opacity:0
     }
+}
 
 
 .animate-bottom {
