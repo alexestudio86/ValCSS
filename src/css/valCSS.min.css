@@ -1266,25 +1266,21 @@ box-shadow:0 2px 5px 0 #00000029 0 2px 10px 0 #0000001f
 box-shadow:0 4px 10px 0 #0003 0 4px 20px 0 #00000030
 }
 
-.spin {
-animation:spin 2s infinite linear
+@keyframes animateSpin {
+    0% {
+    transform:rotate(0deg)
+    }
+
+    100% {
+    transform:rotate(359deg)
+    }
 }
 
-@keyframes spin {
-0% {
-transform:rotate(0deg)
+.animate-spin {
+animation:animateSpin 2s infinite linear
 }
 
-100% {
-transform:rotate(359deg)
-}
-}
-
-.animate-fading {
-animation:fading 10s infinite
-}
-
-@keyframes fading {
+@keyframes animateFading {
     0% {
     opacity:0
     }
@@ -1298,11 +1294,11 @@ animation:fading 10s infinite
     }
 }
 
-.animate-opacity {
-animation:opac .8s
+.animate-fading {
+animation:animateFading 10s infinite
 }
 
-@keyframes opac {
+@keyframes animateOpacity {
     from {
     opacity:0
     }
@@ -1312,12 +1308,11 @@ animation:opac .8s
     }
 }
 
-.animate-top {
-    position:relative;
-    animation:animatetop .4s
+.animate-opacity {
+animation:animateOpacity .8s
 }
 
-@keyframes animatetop {
+@keyframes animateTop {
     from {
     top:-300px;
     opacity:0
@@ -1326,15 +1321,15 @@ animation:opac .8s
     to {
     top:0;
     opacity:1
-}
-}
-
-.animate-left {
-    position:relative;
-    animation:animateleft .4s
     }
+}
 
-    @keyframes animateleft {
+.animate-top {
+    position:relative;
+    animation:animateTop .4s
+}
+
+@keyframes animateLeft {
     from {
     left:-300px;
     opacity:0
@@ -1346,28 +1341,28 @@ animation:opac .8s
     }
 }
 
-.animate-left-out {
-    animation:animatelefttout .4s forwards
+.animate-left {
+    position:relative;
+    animation:animateLeft .4s
 }
 
-@keyframes animateleftout {
+
+
+@keyframes animateLeftOut {
     from {
     transform: translateX(0);
-    opacity:1
     }
 
     to {
     transform: translateX(-100%);
-    opacity:0
     }
 }
 
-.animate-right {
-position:relative;
-animation:animateright .4s
+.animate-left-out {
+    animation:animateLeftOut .4s forwards
 }
 
-@keyframes animateright {
+@keyframes animateRight {
     from {
     right:-300px;
     opacity:0
@@ -1379,29 +1374,26 @@ animation:animateright .4s
     }
 }
 
-.animate-right-out {
-animation:animaterightout .4s forwards
+.animate-right {
+position:relative;
+animation:animateRight .4s
 }
     
- @keyframes animaterightout {
+@keyframes animateRightOut {
     from {
     transform: translateX(0);
-    opacity:1
     }
     
     to {
     transform: translateX(100%);
-    opacity:0
     }
 }
 
-
-.animate-bottom {
-position:relative;
-animation:animatebottom .4s
+.animate-right-out {
+animation:animateRightOut .4s forwards
 }
 
-@keyframes animatebottom {
+@keyframes animateBottom {
     from {
     bottom:-300px;
     opacity:0
@@ -1413,11 +1405,12 @@ animation:animatebottom .4s
     }
 }
 
-.animate-zoom {
-animation:animatezoom .6s
+.animate-bottom {
+position:relative;
+animation:animateBottom .4s
 }
 
-@keyframes animatezoom {
+@keyframes animateZoom {
     from {
     transform:scale(0)
     }
@@ -1425,6 +1418,10 @@ animation:animatezoom .6s
     to {
     transform:scale(1)
     }
+}
+
+.animate-zoom {
+animation:animateZoom .6s
 }
 
 .animate-input {
