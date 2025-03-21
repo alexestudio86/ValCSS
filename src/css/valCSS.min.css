@@ -1375,7 +1375,7 @@ animation:animateright .4s
         }
     
         to {
-        right:-400;
+        right:-400px;
         opacity:0
         }
     }
