@@ -548,7 +548,7 @@ background-color:#fff
 background-color:#f1f1f1
 }
 
-.hoverable tbody tr:hover,.ul.hoverable li:hover, article.hoverable {
+.hoverable tbody tr:hover,.ul.hoverable li:hover, article a:hover.hoverable {
     opacity:            0.75;
     background-color:   var(--theme-color-three);
     text-decoration:    none;
