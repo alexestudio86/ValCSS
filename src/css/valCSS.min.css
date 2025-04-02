@@ -819,7 +819,6 @@ overflow-x:auto
 }
 
 .container::after,.container::before,.panel:after,.panel:before,.row:after,.row:before,.row-padding:after,.row-padding:before,.cell-row:before,.cell-row:after,.clear:after,.clear:before,.bar:before,.bar:after {
-content:"";
 display:table;
 clear:both
 }
@@ -1269,8 +1268,68 @@ margin-bottom:16px
     gap: 16px;
 }
 
+.flex-row {
+    flex-direction: row!important
+}
+
+.flex-row-reverse {
+    flex-direction: row-reverse!important
+}
+
 .d-flex, .flex {
-    display: flex;
+    display: flex !important;
+}
+
+.flex-column {
+    flex-direction:column!important
+}
+
+.flex-column-reverse {
+    flex-direction:row-reverse!important
+}
+
+.justify-content-start {
+    justify-content:flex-start!important
+}
+
+.justify-content-center {
+    justify-content:center!important
+}
+
+.justify-content-end {
+    justify-content:flex-end!important
+}
+
+.justify-content-between {
+    justify-content:space-between!important
+}
+
+.justify-content-around {
+    justify-content:space-around!important
+}
+
+.justify-content-evenly {
+    justify-content:space-evenly!important
+}
+
+.align-items-start {
+    align-items:flex-start!important
+}
+
+.align-items-center {
+    align-items:center!important
+}
+
+.align-items-end {
+    align-items:flex-end!important
+}
+
+.align-items-baseline {
+    align-items:baseline!important
+}
+
+.align-items-stretch {
+    align-items:stretch!important
 }
 
 
@@ -2826,54 +2885,6 @@ position:-webkit-sticky;
 position:sticky;
 top:0;
 z-index:1020
-}
-
-.d-flex {
-display:flex!important
-}
-
-.justify-content-start {
-    justify-content:flex-start!important
-}
-
-.justify-content-center {
-    justify-content:center!important
-}
-
-.justify-content-end {
-    justify-content:flex-end!important
-}
-
-.justify-content-between {
-    justify-content:space-between!important
-}
-
-.justify-content-around {
-    justify-content:space-around!important
-}
-
-.justify-content-evenly {
-    justify-content:space-evenly!important
-}
-
-.align-items-start {
-    align-items:flex-start!important
-}
-
-.align-items-center {
-    align-items:center!important
-}
-
-.align-items-end {
-    align-items:flex-end!important
-}
-
-.align-items-baseline {
-    align-items:baseline!important
-}
-
-.align-items-stretch {
-    align-items:stretch!important
 }
 
 .price:before {
