@@ -532,20 +532,20 @@ display:table
 border:1px solid #ccc
 }
 
-.bordered tr,.table-all tr {
+.bordered thead, .table-all thead, .table-all tbody tr {
 border-bottom:1px solid #ddd
 }
 
 .striped tbody tr:nth-child(even) {
-background-color:#f1f1f1
-}
-
-.table-all tbody tr:nth-child(odd) {
 background-color:#fff
 }
 
-.table-all tbody tr:nth-child(even) {
+.table-all tbody tr:nth-child(odd) {
 background-color:#f1f1f1
+}
+
+.table-all tbody tr:nth-child(even) {
+background-color:#fff
 }
 
 .hoverable tbody tr:hover,.ul.hoverable li:hover, article a:hover.hoverable {
