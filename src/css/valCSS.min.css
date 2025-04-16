@@ -266,6 +266,18 @@ background-color:var(--color-light-yellow)!important
 
 /*TEXT*/
 
+.text-theme-color-01, .hover-text-theme-color-01:hover {
+    color:var(--theme-color-one)
+}
+
+.text-theme-color-02, .hover-text-theme-color-02:hover {
+    color:var(--theme-color-two)
+}
+
+.text-theme-color-03, .hover-text-theme-color-03:hover {
+    color:var(--theme-color-three)
+}
+
 .text-amber, .hover-text-amber:hover {
 color:var(--color-amber)!important
 }
