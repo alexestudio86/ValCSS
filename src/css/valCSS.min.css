@@ -370,6 +370,18 @@ color:var(--color-white)!important
 color:var(--color-light-grey)!important
 }
 
+.border-theme-color-01, .border-hover-theme-color-01:hover {
+    border-color:var(--theme-color-one)!important;
+}
+    
+.border-theme-color-02, .border-hover-theme-color-02:hover {
+    border-color:var(--theme-color-two)!important;
+}
+    
+.border-theme-color-03, .border-hover-theme-color-03:hover {
+    border-color:var(--theme-color-three)!important;
+}
+
 .border-amber,.hover-border-amber:hover {
 border-color:var(--color-amber)!important
 }
