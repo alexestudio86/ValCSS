@@ -1508,17 +1508,17 @@ box-shadow:0 4px 10px 0 #0003 0 4px 20px 0 #00000030
     animation:animateSpin 2s infinite linear
 }
 
-@keyframes animateSpinX {
+@keyframes animateSpinY {
     0% {
-    transform:rotateX(0deg)
+    transform:rotatey(0deg)
     }
 
     100% {
-    transform:rotateX(360deg)
+    transform:rotatey(360deg)
     }
 }
-.animate-spin-x {
-    animation:animateSpinX 2s linear infinite;
+.animate-spin-horizontal {
+    animation:animateSpinY 2s linear infinite;
 }
 
 @keyframes animateFading {
