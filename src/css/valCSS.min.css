@@ -2240,14 +2240,15 @@ border-radius:0 0 8px 8px
 }
 
 .price:before {
-content:"$ ";
-font:bold 15px Amatic,sans-serif
+    content:"$ ";
+    font:bold 12px Amatic,sans-serif
 }
 
 .price:after {
-content:" mxn";
-font:bold 10px Amatic,sans-serif;
-text-transform:uppercase
+    content:" mxn";
+    font:bold 12px Amatic,sans-serif;
+    text-transform:uppercase;
+    vertical-align:super
 }
 
 .black-transparent-medium {
@@ -2941,16 +2942,4 @@ position:-webkit-sticky;
 position:sticky;
 top:0;
 z-index:1020
-}
-
-.price:before {
-content:"$ ";
-font:bold 12px Amatic,sans-serif
-}
-
-.price:after {
-content:" 00";
-font:bold 12px Amatic,sans-serif;
-text-transform:uppercase;
-vertical-align:super
 }
