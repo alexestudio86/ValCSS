@@ -545,18 +545,22 @@ color:inherit
 }
 
 .table,.table-all {
-border-collapse:collapse;
-border-spacing:0;
-width:100%;
-display:table
+    border-collapse:collapse;
+    border-spacing:0;
+    width:100%;
+    display:table
 }
 
 .table-all {
 border:1px solid #ccc
 }
 
-.bordered thead, .table-all thead, .table-all tbody tr {
+.bordered thead, .bordered tr, .table-all thead, .table-all tbody tr {
 border-bottom:1px solid #ddd
+}
+
+.striped tbody tr:nth-child(odd) {
+background-color:#f1f1f1
 }
 
 .striped tbody tr:nth-child(even) {
