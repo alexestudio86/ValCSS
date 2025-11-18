@@ -2,7 +2,7 @@ import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import HomepageHeader from '../components/HomepageHeader';
-import '..css/valCSS.min.css';
+import '../css/valCSS.min.css';
 
 
 export default function Home() {

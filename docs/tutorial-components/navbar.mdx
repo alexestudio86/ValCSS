@@ -1,0 +1,105 @@
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+
+# Navbar / Barra de Navegación
+
+## Tag: &lt;nav&gt;&lt;/nav&gt;
+
+### MENU PEGAJOSO (STICKY MENU) [NATIVE]
+
+export const NavbarOne = () => {
+
+	const {NavbarFijo} = require('@site/src/widgets/NavbarFijo');
+
+	return(
+		<>
+			<NavbarFijo/>
+		</>
+	)
+};
+
+<NavbarOne/>
+
+<Tabs>
+  <TabItem value="html" label="HTML" default>
+
+```html title="Sticky Menú Code"
+<nav>
+  <ul>
+    <li>
+      <a href="#">Inicio</a>
+    </li>
+    <li>
+      <a href="#">Tutoriales</a>
+    </li>
+    <li>
+      <a href="#">Cursos</a>
+    </li>
+    <li>
+      <a href="#">Preguntame algo</a>
+    </li>
+    <li>
+      <a href="#">Contacto</a>
+    </li>
+  </ul>
+</nav>
+```
+
+  </TabItem>
+  <TabItem value="css" label="CSS">
+```css title="Sticky Menu style"
+nav {
+  background: rgba(0,0,0,0.9);
+  width: 100%;
+  position: sticky;
+  top:0;
+  z-index: 10;
+}
+
+nav ul {
+  list-style: none;
+  width: 80%;
+  margin: auto;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  padding: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+nav ul li:hover {
+  background: #3ead47;
+}
+.wrapper {
+  width: 80%;
+  margin: auto;
+  overflow:hidden;
+}
+```
+  </TabItem>
+</Tabs>
+
+
+
+
+export const NavbarTwo = () => {
+
+	const {NavbarFlex} = require('@site/src/widgets/NavbarFlex');
+
+
+	return(
+		<>
+			<NavbarFlex/>
+		</>
+	)
+};
+
+
+<NavbarTwo/>

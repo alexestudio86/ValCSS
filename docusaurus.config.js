@@ -86,11 +86,10 @@ const config = {
             position: 'left',
             label: 'Docs',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/facebook/alexestudio86',
-            label: 'AlexEstudio86',
             position: 'right',
+            label: 'AlexEstudio86',
           },
         ],
       },
