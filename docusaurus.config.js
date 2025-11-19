@@ -12,16 +12,12 @@ const config = {
   tagline: 'Simple y rápido CSS',
   favicon: 'img/favicon.ico',
 
-  // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
+  url: 'https://alexestudio86.github.com/',
+  baseUrl: '/ValCSS',
   organizationName: 'alexestudio86', // Usually your GitHub org/user name.
-  projectName: 'valCSS', // Usually your repo name.
+  projectName: 'ValCSS', // Usually your repo name.
+  deploymentBranch: 'gh-pages',
+  trailingSlash: false,
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -33,6 +29,15 @@ const config = {
     defaultLocale: 'es',
     locales: ['es'],
   },
+
+
+scripts: [
+  {
+    src: 'https://cpwebassets.codepen.io/assets/embed/ei.js',
+    async: true,
+  },
+],
+
 
   presets: [
     [
@@ -77,7 +82,7 @@ const config = {
         title: 'Home',
         logo: {
           alt: 'Logo valCSS',
-          src: 'img/logo.svg',
+          src: '/img/logo.svg',
         },
         items: [
           {

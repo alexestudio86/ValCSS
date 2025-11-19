@@ -1,4 +1,4 @@
-const codePen = require('https://cpwebassets.codepen.io/assets/embed/ei.js')
+
 
 
 export const NavbarSticky = () => {
