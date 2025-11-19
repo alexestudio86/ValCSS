@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvalcss_framework=self.webpackChunkvalcss_framework||[]).push([[340],{1137:a=>{a.exports=JSON.parse('{"metadata":{"permalink":"/valCSS/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
