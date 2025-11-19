@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvalcss_framework=self.webpackChunkvalcss_framework||[]).push([[903],{1912:s=>{s.exports=JSON.parse('{"blogBasePath":"/ValCSS/blog","blogTitle":"Blog","authorsListPath":"/ValCSS/blog/authors"}')}}]);
