@@ -8,13 +8,14 @@ import TabItem from '@theme/TabItem';
 
 ### MENU PEGAJOSO (STICKY MENU) [NATIVE]
 
+
 export const NavbarOne = () => {
 
-	const {NavbarFijo} = require('@site/src/widgets/NavbarFijo');
+	const {NavbarSticky} = require('@site/src/widgets/w-components/Navbar');
 
 	return(
 		<>
-			<NavbarFijo/>
+			<NavbarSticky/>
 		</>
 	)
 };
@@ -85,21 +86,3 @@ nav ul li:hover {
 ```
   </TabItem>
 </Tabs>
-
-
-
-
-export const NavbarTwo = () => {
-
-	const {NavbarFlex} = require('@site/src/widgets/NavbarFlex');
-
-
-	return(
-		<>
-			<NavbarFlex/>
-		</>
-	)
-};
-
-
-<NavbarTwo/>
