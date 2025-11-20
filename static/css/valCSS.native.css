@@ -1,4 +1,4 @@
-@import url('./val.reset.css');
+@import url('./valCSS.reset.css');
 
 @font-face {
 font-family:'Poppins',sans-serif;
@@ -15,7 +15,64 @@ html, body {
 }
 
 
-/* NAVBAR*/
+/* BODY TEMPLATE */
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+}
+
+/* NAV y FOOTER siempre 100% */
+header {
+  grid-area: header;
+  padding: 1rem;
+}
+
+nav {
+  grid-area: nav;
+  padding: 1rem;
+}
+
+footer {
+  grid-area: footer;
+  padding: 1rem;
+}
+
+/* MAIN y ASIDE (modo 1 columna) */
+main {
+  grid-area: main;
+  padding: 1rem;
+}
+
+aside {
+  display: none; /* Por defecto no aparece */
+}
+
+/* Cuando exista ASIDE → activar layout 2 columnas */
+body:has(aside) {
+  grid-template-columns: 2fr 1fr; /* main + aside */
+  grid-template-areas:
+    "header header"
+    "nav nav"
+    "main aside"
+    "footer footer";
+}
+
+/* Mostrar el aside cuando existe */
+body:has(aside) aside {
+  display: block;
+  padding: 1rem;
+}
+
+
+
+/* NAVBAR */
 
 nav#navbar {
   background: rgba(0,0,0,0.9);
