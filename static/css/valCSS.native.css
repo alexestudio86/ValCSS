@@ -1,5 +1,22 @@
 @import url('./val.reset.css');
 
+@font-face {
+font-family:'Poppins',sans-serif;
+src:url(./poppins/Poppins-Regular.ttf)
+}
+
+html, body {
+  overflow-x:hidden;
+  height:100%;
+  width:100%;
+  scroll-behavior:smooth;
+  font-family:'Poppins',Verdana,sans-serif;
+  font-size:15px;
+}
+
+
+/* NAVBAR*/
+
 nav#navbar {
   background: rgba(0,0,0,0.9);
   position: sticky; /*A diferencia del fixed, sticky si ocupa espacio, debe estar acompañado por top*/
