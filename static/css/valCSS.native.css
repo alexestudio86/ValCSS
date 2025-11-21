@@ -1,7 +1,7 @@
 @import url('./valCSS.reset.css');
 
 @font-face {
-font-family:'Poppins',sans-serif;
+font-family:'Poppins';
 src:url(./poppins/Poppins-Regular.ttf)
 }
 
